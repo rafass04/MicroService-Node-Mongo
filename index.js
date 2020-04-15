@@ -9,7 +9,8 @@ express.post('/item/add', (req, res) => {
     sobrenome: req.body.sobrenome,
     cpf: req.body.cpf,
     cep: req.body.cep,
-    tel: req.body.tel
+    tel: req.body.tel,
+	  email: req.body.email
   });
 
   newItem.save().then(item => res.redirect('/'));
