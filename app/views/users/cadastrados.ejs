@@ -14,7 +14,10 @@
         <% items.forEach(function(item) { %>
             <li>
                 <b>Nome:</b> <%= item.nome %> <%= item.sobrenome %> <br>
+                <b>CPF:</b> <%= item.cpf %>
+                <b>CEP:</b> <%= item.cep %>
                 <b>Telefone:</b> <%= item.tel %>
+                <b>Email:</b> <%= item.email %>
             </li>
         <% }); %>
         </ul>
