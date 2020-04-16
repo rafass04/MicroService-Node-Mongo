@@ -10,37 +10,32 @@
 	<body>
 		<div class="container">
 			<div class="content"> 
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form> 
-          <h4>Cadastre-se para receber novidades sobre a IBM</h4> 
-          
-          <p> 
-            <label>Nome completo
-            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required> </label>
-          </p>
-          <p> 
-            <label>E-mail
-			<input type="text" name="email" id="email" placeholder="Seu e-mail" required> </label>
-          </p>
-          
-          <p> 
-            <label>Área de interesse
-			<input type="text" name="interesse" id="interesse" placeholder="Tecnologia, comercial, serviços..." required> </label>
-          </p>
-          
-          <p> 
-            <input type="submit" value="Cadastrar"/> 
-          </p>
-          
-          <div class="text-center">
-            <small> 
-              <a href="/cadastrados">Usuários cadastrados</a>
-            </small>	
-          </div>
-        </form>
-      </div>
-    </div>
+      				<div id="cadastro">
+					<form autocomplete="off" method="post" action="/item/add"> 
+					  <h4>Cadastre-se para receber novidades sobre a IBM</h4>           
+					  <p> 
+					    <label>Nome completo
+					    <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required> </label>
+					  </p>
+					  <p> 
+					    <label>E-mail
+							      <input type="text" name="email" id="email" placeholder="Seu e-mail" required> </label>
+					  </p>          
+					  <p> 
+					    <label>Área de interesse
+							      <input type="text" name="interesse" id="interesse" placeholder="Tecnologia, comercial, serviços..." required> </label>
+					  </p>          
+					  <p> 
+					    <input type="submit" value="Cadastrar"/> 
+					  </p>          
+					  <div class="text-center">
+					    <small> 
+					      <a href="/cadastrados">Usuários cadastrados</a>
+					    </small>	
+					  </div>
+					</form>
+				 </div>
+    			</div>
 		</div>
 	</body>
 </html>
