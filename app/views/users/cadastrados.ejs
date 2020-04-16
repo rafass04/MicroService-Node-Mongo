@@ -9,27 +9,29 @@
     </head>
     <body class="cor">
         <div class="container">
-            <div><img src="../../img/ibm-logo.jpg" alt="IBM"></div>
-            <div>
-                <h4><b>Usuários cadastrados</b></h4>
-                <ul>
-                    <% items.forEach(function(item) { %>
-                        <li>
-                            <b>Nome:</b> <%= item.nome %> <%= item.sobrenome %> <br>
-                            <b>CPF:</b> <%= item.cpf %> <br>
-                            <b>CEP:</b> <%= item.cep %> <br>
-                            <b>Telefone:</b> <%= item.tel %> <br>
-                            <b>Email:</b> <%= item.email %> <br>
-                            <br>
-                        </li>
-                    <% }); %>
-                </ul>
-                <div class="text-center">
-                    <small>
-                        <a href="/" class="text">Página de cadastro</a>
-                    </small>
-                </div>
-            </div>
+            <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <div>
+          <h4><b>Usuários cadastrados</b></h4>
+          <ul>
+              <% items.forEach(function(item) { %>
+                  <li>
+                      <b>Nome:</b> <%= item.nome %> <br>
+                      <b>E-mail:</b> <%= item.email %> <br>
+                      <b>Área de interesse:</b> <%= item.interesse %> <br>
+                      <br>
+                  </li>
+              <% }); %>
+          </ul>
+          <div class="text-center">
+              <small>
+                  <a href="/">Página de cadastro</a>
+              </small>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
     </body>
 </html>
