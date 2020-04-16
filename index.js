@@ -6,11 +6,8 @@ const mongo = require('./config/connect_db');
 express.post('/item/add', (req, res) => {
   const newItem = new Item({
     nome: req.body.nome,
-    sobrenome: req.body.sobrenome,
-    cpf: req.body.cpf,
-    cep: req.body.cep,
-    tel: req.body.tel,
-	  email: req.body.email
+    email: req.body.email,
+    interesse: req.body.interesse
   });
 
   newItem.save().then(item => res.redirect('/'));
